@@ -1,0 +1,11 @@
+name: force_elements
+description: >
+  The polymer elements for the dart force framework
+version: 0.0.1
+author: Joris Hermans
+#homepage: https://www.example.com
+dependencies:
+  polymer: '>=0.15.4 <0.16.0'
+  force: ">=0.6.2+1 <0.7.0"
+dev_dependencies:
+  unittest: any
