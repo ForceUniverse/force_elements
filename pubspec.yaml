@@ -5,7 +5,10 @@ version: 0.0.1
 author: Joris Hermans
 #homepage: https://www.example.com
 dependencies:
-  polymer: '>=0.15.4 <0.16.0'
+  polymer: ">=0.16.0+7 <0.17.0"
   force: ">=0.6.2+1 <0.7.0"
+  web_components: ">=0.9.0 <0.12.0"
 dev_dependencies:
   unittest: any
+transformers:
+- polymer

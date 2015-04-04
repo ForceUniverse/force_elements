@@ -1,0 +1,36 @@
+<!--
+  Copyright (c) 2015, <your name>. All rights reserved. Use of this source code
+  is governed by a BSD-style license that can be found in the LICENSE file.
+-->
+
+<!-- import polymer-element's definition -->
+<link rel="import" href="../../packages/polymer/polymer.html">
+<link rel="import" href="../lib/force/force_on_element.html">
+
+<link rel="import" href="../../packages/force_elements/x_changer.html">
+
+<polymer-element name="chat-app" attributes="forceClientId">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    
+    <input label="Type something..." value="{{message}}" />
+    <button on-click="{{send}}">Add</button>
+    
+    <force-on forceClientId="{{forceClientId}}" request="update" on-received="{{received}}"></force-on>
+    <x-changer prop="bla"></x-changer>
+    
+    <section id="main">
+        <ul id="channel-list">
+          <template if="{{todos != null}}" repeat="{{todo in todos}}">
+            <li>{{todo}}</li>
+          </template>
+        </ul>
+    </section>
+    <hr />
+  </template>
+  <script type="application/dart" src="chat_app.dart"></script>
+</polymer-element>

@@ -1,0 +1,19 @@
+name: 'chat_example'
+version: 0.0.1
+description: >
+  A starter polymer application
+#author: <your name> <email@example.com>
+#homepage: https://www.example.com
+environment:
+  sdk: '>=1.0.0 <2.0.0'
+dependencies:
+  browser: any
+  polymer: '>=0.15.4 <0.16.0'
+  paper_elements: '>=0.6.1 <0.7.0'
+  force_elements: 
+    path: ../../
+  force: '>=0.6.2+1 <0.7.0' 
+  cargo: any
+transformers:
+- polymer:
+    entry_points: web/index.html
