@@ -1,8 +1,8 @@
-// Copyright (c) 2015, <your name>. All rights reserved. Use of this source code
+// Copyright (c) 2015, ForceUniverse. All rights reserved. Use of this source code
 // is governed by a BSD-style license that can be found in the LICENSE file.
 
 import 'package:polymer/polymer.dart';
-import 'package:chat_example/force/force_depending_element.dart';
+import 'package:force_elements/force_client_mixin.dart';
 
 import 'dart:html';
 
@@ -18,7 +18,7 @@ class Todos extends Object with Observable {
 
 /// A Polymer `<main-app>` element.
 @CustomTag('chat-app')
-class ChatApp extends ForceDependingElement {
+class ChatApp extends ForceElement {
   @published String message = '';
   
   @published ObservableList todos = new ObservableList();

@@ -50,18 +50,19 @@ class ForceOnElement extends ForceElement {
   @published String forceClientId;
     
   requestChanged() {
-    print("request changed!");
     this.connected();
   }  
   
   void connected() {
     print("register on ... $request");
-    forceClient.on(request, (MessagePackage fme, Sender sender) {
-      data = fme.json;
-      profile = fme.profile;
-      
-      this.asyncFire("received", detail: data);
-    });
+    if (forceClient!=null) {
+      forceClient.on(request, (MessagePackage fme, Sender sender) {
+        data = fme.json;
+        profile = fme.profile;
+        
+        this.asyncFire("received", detail: data);
+      });
+    }
     //this.asyncFire('registered');
   }
 }

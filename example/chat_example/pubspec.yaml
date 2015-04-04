@@ -8,7 +8,7 @@ environment:
   sdk: '>=1.0.0 <2.0.0'
 dependencies:
   browser: any
-  polymer: '>=0.15.4 <0.16.0'
+  polymer: '>=0.16.0+7 <0.17.0'
   paper_elements: '>=0.6.1 <0.7.0'
   force_elements: 
     path: ../../

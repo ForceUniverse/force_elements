@@ -24,7 +24,7 @@ void forceClientIdChanged() {
       }
 }
 
-void connected();
+void connected() {}
 
 ForceClient get forceClient => fcElement.forceClient;
 }
