@@ -9,13 +9,13 @@ These are the polymer elements for Force, use these elements to create awesome r
 #### Walkthrough ####
 
 First of all we have ForceClientElement, it will instantiate a ForceClient connection.
-
+```xml
   <force-client url="localhost" port="4040" usePolling="true" heartbeat="600"></force-client>
-  
+```  
 Force on is another element that will make it possible to listen to a certain socket request, it is the force.on("request", (message, sender) {}); wrapper.
-
+```xml
   <force-on forceClientId="fcid" request="listen" data="{{data}}" profile="{{profile}}"></force-on>
-
+```
 This element will expose:
 
 - data that can change on every push from a client or server
@@ -28,8 +28,7 @@ You can use ForceElement to access ForceClient instance and to have more functio
 
 #### TODO ####
 
-- get more annotations and options for sending the response back
-- writing tests
+- add more polymer elements to assist you with on development
  
 ### Notes to Contributors ###
 
