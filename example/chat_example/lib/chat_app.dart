@@ -2,7 +2,7 @@
 // is governed by a BSD-style license that can be found in the LICENSE file.
 
 import 'package:polymer/polymer.dart';
-import '../../../lib/force_element.dart';
+import 'package:force_elements/force_element.dart';
 
 import 'dart:html';
 
