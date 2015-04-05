@@ -4,7 +4,7 @@
 library force_elements.test;
 
 import 'package:unittest/unittest.dart';
-import '../lib/force_client_mixin.dart';
+import '../lib/force_element.dart';
 
 main() {
   group('A group of tests', () { 

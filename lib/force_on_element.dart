@@ -5,7 +5,7 @@ import 'dart:html';
 import 'package:force/force_browser.dart';
 import 'package:polymer/polymer.dart';
 
-import 'package:force_elements/force_client_mixin.dart';
+import 'force_element.dart';
 
 /// Element that will listen to force.on events of Force
 ///

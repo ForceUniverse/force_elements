@@ -1,13 +1,11 @@
 <!--
-  Copyright (c) 2015, <your name>. All rights reserved. Use of this source code
+  Copyright (c) 2015, ForceUniverse. All rights reserved. Use of this source code
   is governed by a BSD-style license that can be found in the LICENSE file.
 -->
 
 <!-- import polymer-element's definition -->
 <link rel="import" href="../../packages/polymer/polymer.html">
 <link rel="import" href="../../packages/force_elements/force_on_element.html">
-
-<link rel="import" href="../../packages/force_elements/x_changer.html">
 
 <polymer-element name="chat-app" attributes="forceClientId">
   <template>
@@ -21,7 +19,6 @@
     <button on-click="{{send}}">Add</button>
     
     <force-on forceClientId="{{forceClientId}}" request="update" on-received="{{received}}"></force-on>
-    <x-changer prop="bla"></x-changer>
     
     <section id="main">
         <ul id="channel-list">
