@@ -2,7 +2,7 @@ name: force_elements
 description: >
   The polymer elements for the dart force framework
 version: 0.0.1
-author: Joris Hermans
+author: Joris Hermans <hermansj@gmail.com>
 homepage: https://github.com/ForceUniverse/force_elements
 dependencies:
   polymer: ">=0.16.0+7 <0.17.0"
