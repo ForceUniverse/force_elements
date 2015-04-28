@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.0.3
+
+- Fix a reference in force_register element
+
 ## 0.0.2
 
 - Fix a bug on request changed
