@@ -6,7 +6,7 @@
 
 ## 0.0.3
 
-- Fix a reference in force_register element
+- Fix a reference in force_register element and clean up some code
 
 ## 0.0.2
 
