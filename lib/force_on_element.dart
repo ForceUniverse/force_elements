@@ -48,13 +48,13 @@ class ForceOnElement extends ForceElement {
   @published var profile = '';
   
   @published String forceClientId;
+  
     
   requestChanged() {
-    this.connected();
+    if (this.loaded) this.connected();
   }  
   
   void connected() {
-    print("register on ... $request");
     if (forceClient!=null) {
       forceClient.on(request, (MessagePackage fme, Sender sender) {
         data = fme.json;

@@ -21,6 +21,13 @@ This element will expose:
 - data that can change on every push from a client or server
 - profile that is been attached to your socket connection
 
+Force register will help you register to a cargo collection (file based, mongodb, ... or your own implementation on top of cargo)
+```xml
+  <force-register forceClientId="fcid" name="todos" collection="{{todos}}" revert="true" limit="10"></force-register>
+```
+So this will get you a todos collection with 10 results and the last ones that are been added first.
+ 
+
 You can use ForceElement to access ForceClient instance and to have more functionality tight to Force.
 
     @CustomTag('chat-app')
