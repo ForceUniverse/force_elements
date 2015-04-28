@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.0.3+1
+
+- Improve the elements internal working
+
 ## 0.0.3
 
 - Fix a reference in force_register element

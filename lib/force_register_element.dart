@@ -106,8 +106,6 @@ class ForceRegisterElement extends ForceElement {
    * @default 'default'
    */
   @published ObservableMap params;
-  
-  bool loaded = false;
       
   void connected() {
     if (cargo==null) {
@@ -115,14 +113,10 @@ class ForceRegisterElement extends ForceElement {
     }
     this._recollect();
     //this.asyncFire('registered');
-    
-    loaded = true;
   }
   
   void _recollect() {
-    print("recollect");
     if (forceClient!=null) {
-      print("yes do it ...");
       Options options = new Options(revert: revert, limit: limit);
       ViewCollection todos = forceClient.register(name, cargo, options: options, params: params);
       collection.activate(todos);
@@ -132,17 +126,14 @@ class ForceRegisterElement extends ForceElement {
   }
   
   void paramsChanged() {
-    print("changed params $loaded");
     if (loaded) this._recollect();
   }
   
   void revertChanged() {
-    print("changed revert $loaded");
     if (loaded) this._recollect();
   }
   
   void limitChanged() {
-    print("changed limit $loaded");
     if (loaded) this._recollect();
   }
 }

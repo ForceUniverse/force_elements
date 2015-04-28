@@ -28,5 +28,11 @@ void connected() {}
 
 ForceClient get forceClient => fcElement.forceClient;
 
-bool get loaded => fcElement.loaded;
+bool get loaded {
+  var _loaded = false;
+  if (fcElement!=null) {
+    _loaded = fcElement.loaded;
+  }
+  return _loaded;
+}
 }
