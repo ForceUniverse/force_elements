@@ -2,7 +2,6 @@
 library force_elements.force_client_dart;
 
 import 'dart:html';
-import 'dart:convert' show JSON;
 import 'package:force/force_browser.dart';
 import 'package:polymer/polymer.dart';
 

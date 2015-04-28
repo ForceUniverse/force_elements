@@ -27,4 +27,6 @@ void forceClientIdChanged() {
 void connected() {}
 
 ForceClient get forceClient => fcElement.forceClient;
+
+bool get loaded => fcElement.loaded;
 }
